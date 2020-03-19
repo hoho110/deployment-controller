@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 @Component
 @Slf4j
 public class KubeClientDelegate implements InitializingBean, PodModifiedWatcher {
-    private static final String API_SRV_ADDRESS = "http://localhost:12000";
+    private static final String API_SRV_ADDRESS = "http://localhost:8001";
     private static final long TIME_OUT = 20L;
     private KubernetesClient client;
     /** key为pod的uid，value为count down latch */
